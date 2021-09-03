@@ -1,10 +1,7 @@
 import matplotlib.pyplot as plt
 
-# Plot the validation and training data separately
-def plot_loss_curves(history):
-  """
-  Returns separate loss curves for training and validation metrics.
-  """ 
+# pass the history obj as param
+def plot_history(history):
   loss = history.history['loss']
   val_loss = history.history['val_loss']
 
